@@ -24,8 +24,8 @@ public class Punkt3d {
 	} 
 	
 	@Override 
-    public String toString() {
+        public String toString() {
 		return x + "," + y + "," + z;
-    }
+        }
 }
 
