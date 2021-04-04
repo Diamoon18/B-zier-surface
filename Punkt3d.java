@@ -2,8 +2,8 @@ package Lab4;
 
 public class Punkt3d {
 	private double x;
-    private double y;
-    private double z;
+        private double y;
+        private double z;
 
 	public Punkt3d(double x, double y,  double z) {
 		this.x = x;
