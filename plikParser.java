@@ -22,8 +22,6 @@ public class plikParser {
 	public void openFile(String nameFileInput) {
 		try {
 			scan = new BufferedReader(new FileReader(nameFileInput));
-			//scan = new BufferedReader(new FileReader("src/Lab4/spoon.txt")); 
-			//scan = new BufferedReader(new FileReader("src/Lab4/teapot.txt")); 
 		} catch (FileNotFoundException e) {
 			System.out.print("Not found!");
 			e.printStackTrace();
