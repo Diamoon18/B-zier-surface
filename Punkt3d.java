@@ -1,9 +1,9 @@
 package Lab4;
 
 public class Punkt3d {
-	private double x;
-    private double y;
-    private double z;
+       private double x;
+       private double y;
+       private double z;
 
 	public Punkt3d(double x, double y,  double z) {
 		this.x = x;
@@ -24,8 +24,8 @@ public class Punkt3d {
 	} 
 	
 	@Override 
-    public String toString() {
+        public String toString() {
 		return x + "," + y + "," + z;
-    }
+        }
 }
 
