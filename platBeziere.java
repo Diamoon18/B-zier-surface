@@ -1,9 +1,6 @@
 package Lab4;
 
-
-
 import java.io.IOException;
-
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +10,11 @@ import java.util.List;
 public class platBeziere {
 	
 	static public void formBeziera(String nameFileInput, String nameFileOutput, int surface) throws IOException {
-		plikParser pl = new plikParser(nameFileInput);
-		List<Punkt3d> punktiki = new ArrayList<>();
-		List<Punkt3d> temp = new ArrayList<>();
+	    plikParser pl = new plikParser(nameFileInput);
+	    List<Punkt3d> punktiki = new ArrayList<>();
+	    List<Punkt3d> temp = new ArrayList<>();
 		
-		double px;
+            double px;
 	    double py;
 	    double pz; 
 	    
@@ -25,17 +22,6 @@ public class platBeziere {
 	    punktiki = pl.punktArray();
 	   
 	    PrintWriter zapis = new PrintWriter(nameFileOutput);
-	    //int ilPlatTeacup = 26;
-	    
-	    /*
-	    PrintWriter zapis = new PrintWriter("src/Lab4/spoon_new.txt");
-	    int ilPlatSpoon = 16;
-	    */
-	    
-	    /*
-	    PrintWriter zapis = new PrintWriter("src/Lab4/teapot_new.txt");
-	    int ilPlatTeapot = 32;
-	     */
 	    
 	    zapis.println("x,y,z");
 	    
