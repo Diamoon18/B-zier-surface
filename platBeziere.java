@@ -13,11 +13,11 @@ import java.util.List;
 public class platBeziere {
 	
 	static public void formBeziera() throws IOException {
-		plikParser pl = new plikParser();
-		List<Punkt3d> punktiki = new ArrayList<>();
-		List<Punkt3d> temp = new ArrayList<>();
+	    plikParser pl = new plikParser();
+	    List<Punkt3d> punktiki = new ArrayList<>();
+	    List<Punkt3d> temp = new ArrayList<>();
 		
-		double px;
+	    double px;
 	    double py;
 	    double pz; 
 	    
