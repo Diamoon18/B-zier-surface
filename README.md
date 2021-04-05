@@ -104,6 +104,12 @@ Close output file.
 	zapis.close();
 ```		
  ###  class main - call the method formBeziera for generating points.
+```java
+	String sciezkaTeacup = "src/Lab4/teacup.txt";
+	String sciezkaTeacupOut = "src/Lab4/teacup_new.txt";
+	platBeziere.formBeziera(sciezkaTeacup, sciezkaTeacupOut, 26);
+	...
+```					   
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
 //formula wyprowadzenie \
