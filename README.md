@@ -110,7 +110,7 @@ Close output file.
 	platBeziere.formBeziera(sciezkaTeacup, sciezkaTeacupOut, 26);
 	...
 ```
-Link to download the output files(because the file sizd is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing					   
+Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing					   
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
 //formula wyprowadzenie \
