@@ -110,9 +110,15 @@ Close output file.
 	platBeziere.formBeziera(sciezkaTeacup, sciezkaTeacupOut, 26);
 	...
 ```
-Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing					   
+Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing \		
+It remains only to open these files in the program ParaView. \
+1) Filters -> Alphabetical -> Point to point \
+2) Setting coordinates \
+3) Turn on visibility 
+ ![spoon_roz](https://user-images.githubusercontent.com/72127610/113595469-58ad8080-9639-11eb-8df3-f90bfeabd6fa.jpg)
+
 ## Resources:
-Output files: http://www.holmes3d.net/graphics/teapot/ \
+Input files: http://www.holmes3d.net/graphics/teapot/ \
 Formula: ![Lab4](https://user-images.githubusercontent.com/72127610/113593918-492d3800-9637-11eb-9ebb-b1a4417a8ed0.jpg)
 ParaView app: https://www.paraview.org/ 
 # Result:
