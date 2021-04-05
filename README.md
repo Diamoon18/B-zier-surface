@@ -46,6 +46,63 @@ Return list of points received from input file.
 		  return punkty;
 	  }
 ```
+###  class platBeziere - the most important
+This class contains one static method to generate a subsidiary points. \
+As parametrs this method takes: \
+String nameFileInput - path to input file.\
+String nameFileOutput - path to output file.\
+int surface - the number of Beziere surfaces.\
+Reading from input file.\
+```java
+	 plikParser pl = new plikParser(nameFileInput);
+```
+The lists for points and coordinates for subsidiary points.
+```java
+	 List<Punkt3d> punktiki = new ArrayList<>();
+	 List<Punkt3d> temp = new ArrayList<>();
+	 double px;
+	 double py;
+	 double pz;
+```
+x - initial index.\
+y - end index.\
+We transfer the list of points from the input file to the empty list `punktiki`.
+```java
+	 int x = 0, y = 16;
+	 punktiki = pl.punktArray();
+```
+Using the class PrintWriter, open the output file for writing.\
+In the first line we write the name of the coordinates(it is needed in the future for the program ParaView)
+```java
+	PrintWriter zapis = new PrintWriter(nameFileOutput);
+	zapis.println("x,y,z");
+```
+Loop through the number of surfaces and add 15 points from the list `punktiki` to the temporary list.\
+Using the method sublist, making small lists of 15 points. 
+```java
+	for(int p = 0; p < surface; p++) {
+		temp = punktiki.subList(x, y);
+		...
+```
+Write down the entered formula above for the coordinates.
+```java
+	for(double v = 0.0; v <= 1.0; v+=0.001) {
+                for(double w = 0.0; w <= 1.0; w+=0.001) {
+        		px = (temp.get(0).getX()*Math.pow(1-v, 3)+3*v*temp.get(1).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(2).getX()+temp.get(3).getX()*Math.pow(v, 3))*(Math.pow(1-w, 3))+(temp.get(4).getX()*Math.pow(1-v, 3)+3*v*temp.get(5).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(6).getX()+temp.get(7).getX()*Math.pow(v, 3))*(3*w*Math.pow(1-w, 2))+(temp.get(8).getX()*Math.pow(1-v, 3)+3*v*temp.get(9).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(10).getX()+temp.get(11).getX()*Math.pow(v, 3))*(3*w*w*(1-w))+(temp.get(12).getX()*Math.pow(1-v, 3)+3*v*temp.get(13).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(14).getX()+temp.get(15).getX()*Math.pow(v, 3))*(Math.pow(w, 3));	...				
+```
+Write the resulting coordinates to the output file.\		
+```java
+	 zapis.print(px +","+ py +","+ pz);
+         zapis.println();
+```
+Clean the list and take the next 15 points.
+```java
+	 temp.clear();
+```
+Close output file.
+```java
+	zapis.close();
+```					    
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
 //formula wyprowadzenie \
