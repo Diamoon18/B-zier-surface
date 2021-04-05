@@ -102,7 +102,8 @@ Clean the list and take the next 15 points.
 Close output file.
 ```java
 	zapis.close();
-```					    
+```		
+ ###  class main - call the method formBeziera for generating points.
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
 //formula wyprowadzenie \
