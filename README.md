@@ -11,40 +11,40 @@ class Punkt3d - for more convenient storage of points. \
 double x, y, z - coordinate value for point. \
 String [] values - to hold lines from a file.
 ```java
-  private BufferedReader scan;
+  	private BufferedReader scan;
 	private ArrayList<Punkt3d> punkty = new ArrayList<Punkt3d>();
 	private Punkt3d p1;
 	private double x, y, z;
 	private String [] values;
 ```
-`method openFile`
+`method openFile` \
 Creating a BufferedReader object to be read from a input file.
 String nameFileInput - file path.
 ```java
-    scan = new BufferedReader(new FileReader(nameFileInput))
+    	scan = new BufferedReader(new FileReader(nameFileInput))
 ```
-`method readFile()`
+`method readFile()` \
 Read lines from the input file while they are.\
 Write a line into the values array (it consists of the three elements).\
 And then we assign each element of rhe array to a variable, or our coordinate.\
 Create a point from these coordinates. Add it to the list.
 ```java
-    String line;
-		while ((line = scan.readLine()) != null) {
-		   values = line.split(",");
-		   x = Double.parseDouble(values[0]);
-		   y = Double.parseDouble(values[1]);
-		   z = Double.parseDouble(values[2]);
-		   p1 = new Punkt3d(x, y, z);
-		   punkty.add(p1);
-	   }
+   	 String line;
+	 while ((line = scan.readLine()) != null) {
+		  values = line.split(",");
+		  x = Double.parseDouble(values[0]);
+		  y = Double.parseDouble(values[1]);
+		  z = Double.parseDouble(values[2]);
+		  p1 = new Punkt3d(x, y, z);
+		  punkty.add(p1);
+	 }
 ```
 `method closeFile()` - close the file.\
 Return list of points received from input file.
 ```java
-  public ArrayList<Punkt3d> punktArray() {
-		  	return punkty;
-	}
+          public ArrayList<Punkt3d> punktArray() {
+		  return punkty;
+	  }
 ```
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
