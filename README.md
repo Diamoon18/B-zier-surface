@@ -113,7 +113,7 @@ Close output file.
 Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing					   
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
-//formula wyprowadzenie \
+Formula: ![Lab4](https://user-images.githubusercontent.com/72127610/113593918-492d3800-9637-11eb-9ebb-b1a4417a8ed0.jpg)
 ParaView app: https://www.paraview.org/ 
 # Result:
 ## Teapot
