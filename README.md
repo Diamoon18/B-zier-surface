@@ -109,7 +109,8 @@ Close output file.
 	String sciezkaTeacupOut = "src/Lab4/teacup_new.txt";
 	platBeziere.formBeziera(sciezkaTeacup, sciezkaTeacupOut, 26);
 	...
-```					   
+```
+Link to download the output files(because the file sizd is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing					   
 ## Resources:
 Output files: http://www.holmes3d.net/graphics/teapot/ \
 //formula wyprowadzenie \
