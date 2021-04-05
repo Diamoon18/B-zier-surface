@@ -1,7 +1,12 @@
 # Bezier surface
 3D objects using Bezier surfaces. \
 I used the ParaView application to render objects. \
-Also, I derive a formula for the Bezier surface of the third degree.
+Also, I derive a formula for the Bezier surface of the third degree. \
+Using this code, you can generate a subsidiary points for all files that are on this site.\
+1) Files must be edited, there should be only coordinates of points separated by commas.
+2) Path to output file. 
+3) Number of Beziere surfaces.
+
 ## Code explanation
 ###  class plikParser 
 Variable initialization: \
