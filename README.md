@@ -110,10 +110,10 @@ Close output file.
 	platBeziere.formBeziera(sciezkaTeacup, sciezkaTeacupOut, 26);
 	...
 ```
-Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing \		
-It remains only to open these files in the program ParaView. \
-1) Filters -> Alphabetical -> Point to point \
-2) Setting coordinates \
+Link to download the output files(because the file size is very large): https://drive.google.com/file/d/1uYVI0hrfylFzAAqQLKaWajIJSeU05V9x/view?usp=sharing		
+It remains only to open these files in the program ParaView.
+1) Filters -> Alphabetical -> Point to point 
+2) Setting coordinates 
 3) Turn on visibility 
  ![spoon_roz](https://user-images.githubusercontent.com/72127610/113595469-58ad8080-9639-11eb-8df3-f90bfeabd6fa.jpg)
 
