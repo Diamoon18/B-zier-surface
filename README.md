@@ -57,7 +57,7 @@ As parametrs this method takes: \
 String nameFileInput - path to input file.\
 String nameFileOutput - path to output file.\
 int surface - the number of Beziere surfaces.\
-Reading from input file.\
+Reading from input file.
 ```java
 	 plikParser pl = new plikParser(nameFileInput);
 ```
@@ -95,7 +95,7 @@ Write down the entered formula above for the coordinates.
                 for(double w = 0.0; w <= 1.0; w+=0.001) {
         		px = (temp.get(0).getX()*Math.pow(1-v, 3)+3*v*temp.get(1).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(2).getX()+temp.get(3).getX()*Math.pow(v, 3))*(Math.pow(1-w, 3))+(temp.get(4).getX()*Math.pow(1-v, 3)+3*v*temp.get(5).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(6).getX()+temp.get(7).getX()*Math.pow(v, 3))*(3*w*Math.pow(1-w, 2))+(temp.get(8).getX()*Math.pow(1-v, 3)+3*v*temp.get(9).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(10).getX()+temp.get(11).getX()*Math.pow(v, 3))*(3*w*w*(1-w))+(temp.get(12).getX()*Math.pow(1-v, 3)+3*v*temp.get(13).getX()*Math.pow(1-v, 2)+3*v*v*(1-v)*temp.get(14).getX()+temp.get(15).getX()*Math.pow(v, 3))*(Math.pow(w, 3));	...				
 ```
-Write the resulting coordinates to the output file.\		
+Write the resulting coordinates to the output file.	
 ```java
 	 zapis.print(px +","+ py +","+ pz);
          zapis.println();
